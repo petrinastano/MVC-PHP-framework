@@ -1,0 +1,169 @@
+
+body{
+	background-color:#ebebeb;
+}
+
+/*--------------- reset ---------------*/
+form input:focus{
+	outline:none;
+}
+
+/*--------------- Dekoracie ---------------*/
+
+.radius-3{
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+/*--------------- Hlavicka ---------------*/
+.top{
+	padding:10px 0;
+	background:url('../images/bg.png');
+}
+
+.top form input[type="text"]{
+	width:100%;
+	padding:15px;
+	background-color:white;
+	border:none;
+	border-radius:0 3px 3px 0;
+}
+
+.top form input[type="submit"]{
+	position:absolute;
+	top:5px;
+	right:25px;
+	text-indent:-9999px;
+	padding:10px;
+	cursor:pointer;
+	background:url('../images/icons-template.png') 20px 0;
+	border:none;
+}
+
+.panel li{
+	display:inline-block;
+	margin:0 10px 0 0;
+}
+
+.panel li:last-child{
+	margin:0;
+}
+
+.panel li a{
+	display:block;
+	padding:10px 22px;
+	text-indent:-9999px;
+}
+
+.panel li:first-child a{background:url('../images/icons-template.png')}
+
+.panel li:nth-child(2) a{
+	background:url('../images/icons-template.png') -47px 0;
+}
+
+.panel li:last-child a{
+	background:url('../images/bg-button.png');
+	border:1px solid #635771;
+	padding:10px;
+	color:#d9d9d9 !important;
+	text-indent:0;
+}
+
+/*----- Vyhladavanie ----- */
+.logo{
+	float:left;
+}
+
+.logo a{
+	display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    background-color: pink;
+    -moz-border-radius:3px 0 0 3px;
+    -webkit-border-radius:3px 0 0 3px;
+    border-radius:3px 0 0 3px;
+}
+
+.input{
+	overflow:hidden;
+}
+
+/*----- Hlavne menu ----- */
+.menu{
+	background-color:white;
+	border-bottom:1px solid #d7d7d7;
+	padding-bottom:18px;
+}
+
+nav ul li{
+	display:inline;
+	margin:0 50px 0 0;
+}
+
+nav a{
+	display: inline-block;
+	padding: 18px 0 0 0;
+	font-weight:400;
+	font-size:0.9em;
+	text-transform:uppercase;
+}
+
+.check{
+	font-weight:bold;
+	background:url('../images/arrow-bg.png') top center no-repeat;
+}
+
+.next span{
+	padding: 0 10px;
+    display: inline-block;
+    text-indent: -9999px;
+    background:url('../images/icons-template.png') -80px 82px;
+}
+
+.filter{margin:15px 0 0 0;}
+.filter a{
+	padding:5px 0 5px 35px;
+	background:url('../images/icons-template.png') -80px 82px;
+}
+
+/*--------------- Obsah - Container ---------------*/
+
+.grid-fix-1,
+.grid-fix-2{
+	position:relative;
+	float:left;
+}
+
+.grid-fix-1{
+	width:500px;
+}
+
+.grid-fix-2{
+	width:650px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding:0 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+

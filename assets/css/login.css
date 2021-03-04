@@ -1,0 +1,140 @@
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic,700italic&subset=latin,latin-ext);
+
+body{
+	background:url('../images/bg.png');
+}
+
+a{color:white;}
+
+/*inputs-formular*/
+input{
+	width:100%;
+	padding:20px;
+	border:none;
+}
+
+/*Logo*/
+
+.logo h1{
+	font-size:4em;
+	font-style:italic;
+	color:white;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing:-2px;
+	font-weight:700;
+	margin:0 0 20px 0;
+}
+
+.logo h1 span{
+	font-weight:lighter;
+	color:white;
+}
+
+/*Formular*/
+#login{position:relative;}
+
+#login input:focus{
+	background-color:#f8f8f8;
+	outline:none;
+}
+
+#login input{
+	font-style:italic;
+	font-weight:bold;
+	font-size:0.9em;
+	letter-spacing:1px;
+}
+
+#login input:first-child{
+	-moz-border-radius:3px 3px 0 0;
+	-webkit-border-radius:3px 3px 0 0;
+	border-radius:3px 3px 0 0;
+	border-bottom:1px solid #d9d9d9;
+}
+
+#login input:nth-child(2){
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+	border-radius:0 0 3px 3px;
+}
+
+#login input[type="submit"]{
+	color:#e0e0e0;
+	cursor:pointer;
+	text-transform:uppercase;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin:20px 0 0 0;
+	background:url('../images/login-submit-bg.png');
+	border:none;
+}
+
+#login .shadow{
+	padding:0 0 60px 0;
+	background:url('../images/login-shadow.png') bottom center no-repeat;
+}
+
+/*zobrazenie chyby*/
+.err{
+	color:white !important;
+	font-weight:bold;
+	margin-top:20px;
+}
+
+#forgot{
+	position:absolute;
+	top: 68px;
+	right: 10px;
+}
+
+#forgot a{
+	display:inline-block;
+	padding:14px 16px 14px 16px;
+	background:url('../images/icons.png') 32px 0;
+}
+
+#forgot span{display:none;}
+
+#about{margin:70px 0 0 0;}
+
+#about a{
+	position:relative;
+	padding:35px 0 0 0;
+	font-weight:lighter;
+	font-size:1.1em;
+}
+
+#about span{
+	position:absolute;
+	top:0;
+	left:45px;
+	padding:11px 34px 0 0;
+	background:url('../images/icons.png') no-repeat;
+	text-indent:-9999px;
+}
+
+/*Obsah - sirky*/
+
+.container{
+	margin:80px auto;
+}
+
+@media(max-width:449px){
+	.container{
+		padding:30px;
+	}
+}
+
+@media(min-width:450px){
+	.container{
+		width:300px;
+	}
+}
+
+@media(min-width:990px){
+	.container{
+		width:350px;
+	}
+}
